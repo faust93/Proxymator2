@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:id="@+id/ui_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            style="@style/Title"
+            android:paddingLeft="7dp" />
+
+        <View style="@style/section_divider"
+             />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile 1"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+            <ImageButton
+                android:id="@+id/prof_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_menu_add" />
+
+            <ImageButton
+                android:id="@+id/prof_save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/prof_add_btn"
+                android:src="@android:drawable/ic_menu_save" />
+
+            <ImageButton
+                android:id="@+id/prof_del_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/prof_save_btn"
+                android:src="@android:drawable/ic_menu_delete" />
+
+        </RelativeLayout>
+        <View style="@style/divider"
+            />
+    <LinearLayout
+        android:id="@+id/associated_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="@string/associated_network"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/profile_associated_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/associated_net_desc"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_marginBottom="7dp"
+            />
+    </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:id="@+id/_autoconn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_connect"
+                android:layout_marginTop="7dip"
+                android:layout_marginBottom="1dp"
+                style="@style/Text"
+                android:paddingLeft="7dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/proxy_auto_connect"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_desc"
+                style="@style/TextSmall"
+                android:paddingLeft="7dp"
+                android:layout_below="@id/_autoconn"
+                android:layout_marginBottom="8dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proxy_settings"
+            style="@style/Title"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="7dp" />
+
+        <View style="@style/section_divider"
+           />
+    <LinearLayout
+        android:id="@+id/proxy_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proxy_address"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/profile_proxy_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proxy_srv_addres"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_marginBottom="7dp"
+            />
+    </LinearLayout>
+        <View style="@style/divider" />
+    <LinearLayout
+        android:id="@+id/proxy_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proxy_port"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="1dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/profile_proxy_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8080"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/authorization"
+            style="@style/Title"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="7dp" />
+
+        <View style="@style/section_divider"
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
+
+    <TextView
+            android:id="@+id/_use_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_auth"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="5dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/proxy_use_auth"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_proxy_auth"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_below="@id/_use_auth"
+            android:layout_marginBottom="7dp"/>
+
+    </RelativeLayout>
+
+        <View style="@style/divider"
+            android:layout_marginTop="7dp"
+            />
+
+     <LinearLayout
+            android:id="@+id/ui_auth_layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_type"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/profile_auth_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onlyBasic"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_marginBottom="7dp"/>
+
+        <View style="@style/divider"
+                        />
+
+         <LinearLayout
+             android:id="@+id/auth_username"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginBottom="6dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dp"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/profile_auth_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proxy_user_name"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_marginBottom="7dp"/>
+    </LinearLayout>
+
+        <View style="@style/divider"
+                        />
+
+         <LinearLayout
+             android:id="@+id/auth_passw"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginBottom="6dp">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/profile_auth_passw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proxy_user_passwd"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp" />
+             </LinearLayout>
+     </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advanced"
+            style="@style/Title"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="7dp" />
+
+        <View style="@style/section_divider"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:id="@+id/_usednsr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/use_dns_resolver"
+                android:layout_marginTop="7dip"
+                android:layout_marginBottom="1dip"
+                style="@style/Text"
+                android:paddingLeft="7dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/proxy_use_dns"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/use_dns_desc"
+                style="@style/TextSmall"
+                android:paddingLeft="7dp"
+                android:layout_below="@id/_usednsr"
+                android:layout_marginBottom="7dp"/>
+
+        </RelativeLayout>
+
+        <View style="@style/divider"
+                  />
+    <LinearLayout
+        android:id="@+id/ui_dns_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/dns_resolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="6dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dns_resolver"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+        <TextView
+            android:id="@+id/profile_dns_resolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="http://"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_marginBottom="6dp"/>
+            </LinearLayout>
+        <View style="@style/divider"
+            />
+        <LinearLayout
+            android:id="@+id/dns_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="6dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dns_query_str"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/profile_dns_query_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="host=%s"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_marginBottom="7dp"/>
+    </LinearLayout>
+        <View style="@style/divider"
+            android:layout_marginTop="7dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dns_query_post"
+                android:layout_marginTop="7dip"
+                android:layout_marginBottom="5dip"
+                style="@style/Text"
+                android:paddingLeft="7dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/proxy_use_post"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+        <View style="@style/divider"
+            android:layout_marginTop="7dp"
+            />
+        <LinearLayout
+            android:id="@+id/bypass_ips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bypass IP addresses"
+                android:layout_marginTop="7dip"
+                android:layout_marginBottom="1dip"
+                style="@style/Text"
+                android:paddingLeft="7dp" />
+
+            <TextView
+                android:id="@+id/profile_bypass_ips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do not proxiy specified IPs"
+                style="@style/TextSmall"
+                android:paddingLeft="7dp"
+                android:layout_marginBottom="7dp"/>
+        </LinearLayout>
+  </LinearLayout>
+
+
+</ScrollView>

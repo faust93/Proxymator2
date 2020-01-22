@@ -1,0 +1,47 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 16
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('/Users/faust/faust93.jks')
+            keyAlias 'faust93'
+        }
+    }
+
+    buildTypes
+            {
+                release {
+                    minifyEnabled true
+                    proguardFile getDefaultProguardFile('proguard-android.txt')
+                    proguardFile '/Users/faust/proguard-project.txt'
+                    signingConfig signingConfigs.release
+                }
+            }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:19.0.0'
+    compile files('libs/RootTools.jar')
+    compile files('libs/com.mobsandgeeks.ui.jar')
+    compile project(':TypefaceTextView')
+}

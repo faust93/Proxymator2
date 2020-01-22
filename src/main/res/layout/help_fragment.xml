@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="false">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_launcher" />
+
+    <com.mobsandgeeks.ui.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#9AC7EA"
+        android:text="Proxymator2"
+        geekui:customTypeface="fonts/Roboto-Condensed.ttf"
+        android:layout_gravity="center_horizontal" />
+
+    <com.mobsandgeeks.ui.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#A0A0A0"
+        android:text="v1.1 beta"
+        geekui:customTypeface="fonts/Roboto-Regular.ttf"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center_horizontal"/>
+
+    <com.mobsandgeeks.ui.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#9AC7EA"
+        android:text="About"
+        geekui:customTypeface="fonts/Roboto-Thin.ttf"
+        android:layout_gravity="center_horizontal" />
+
+    <com.mobsandgeeks.ui.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#FAFAFA"
+        android:text="@string/proxymator_about"
+        geekui:customTypeface="fonts/Roboto-Light.ttf"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        />
+
+    <com.mobsandgeeks.ui.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#9AC7EA"
+        android:text="How to.."
+        geekui:customTypeface="fonts/Roboto-Thin.ttf"
+        android:layout_gravity="center_horizontal" />
+
+    <com.mobsandgeeks.ui.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#FAFAFA"
+        android:text="@string/proxymator_howto"
+        geekui:customTypeface="fonts/Roboto-Light.ttf"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
+</ScrollView>

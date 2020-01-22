@@ -1,0 +1,59 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="section_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">#555555</item>
+    <!--    <item name="android:background">#33b5e5</item> -->
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#444444</item>
+
+    </style>
+
+    <style name="Title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffb5b5b5</item>
+ <!--       <item name="android:fontFamily">sans-serif-thin</item>
+-->
+    </style>
+
+    <style name="Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--       <item name="android:fontFamily">sans-serif-thin</item>
+       -->
+    </style>
+
+    <style name="TextSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+          <!--        <item name="android:fontFamily">sans-serif-thin</item>
+       -->
+    </style>
+
+</resources>
